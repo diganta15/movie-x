@@ -26,6 +26,9 @@
 .title-text{
   text-align: center;
 }
+.section-title{
+    margin-left: 6rem;
+}
 .pages{
    display: flex;
 }
