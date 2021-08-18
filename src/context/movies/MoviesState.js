@@ -1220,8 +1220,6 @@ const MoviesState = (props) =>{
             "total_pages": 23,
             "total_results": 459
         },
-        topShows:null,
-        search:null,
         loading:true,
         errors:null
     }
@@ -1229,7 +1227,7 @@ const MoviesState = (props) =>{
     const [state, dispatch] = useReducer(moviesReducer,initialState);
 
     //TODO Get Top Movies
-    //TODO Send Search Request
+
 
 
     return(

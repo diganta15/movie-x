@@ -3,12 +3,15 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from './components/layout/NavBar';
 import Home from "./components/Pages/Home";
 import MoviesState from './context/movies/MoviesState';
+import BrowseState from "./context/browse/BrowseState";
 import Browse from "./components/Pages/Browse";
-import Search from "./components/Pages/Search"
+import Search from "./components/Pages/Search";
+
 
 function App() {
     return (
         <MoviesState>
+        <BrowseState>
             <Router>
                 <div className="App">
                     <NavBar/>
@@ -19,6 +22,7 @@ function App() {
                     </Switch>
                 </div>
             </Router>
+        </BrowseState>
 
         </MoviesState>
     );
