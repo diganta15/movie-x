@@ -18,12 +18,11 @@ function App() {
                     <Switch>
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/browse' component={Browse}/>
-                        <Route exact path ='/search/:term' component={<Search></Search>} />
+                        <Route exact path ='/search/:term' component={Search} />
                     </Switch>
                 </div>
             </Router>
         </BrowseState>
-
         </MoviesState>
     );
 }
