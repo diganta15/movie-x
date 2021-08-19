@@ -1,9 +1,10 @@
 import React from 'react';
+import ShowItem from "./ShowItem";
 
-const Shows = () => {
+const Shows = ({shows}) => {
     return (
-        <div>
-            
+        <div className="shows grid grid-6">
+            {shows.map(show => (<ShowItem key={show.id} show={show}  />))}
         </div>
     );
 };

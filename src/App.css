@@ -84,6 +84,36 @@ color: #fff;
 .movie-name{
 
 }
+.shows{
+    grid-gap: 20px;
+}
+.show-item-wrapper{}
+
+
+.show-item{
+    height: 8rem;
+    background-size: contain;
+}
 .browse{
     margin: 2rem 8rem 2rem 8rem;
 }
+/*Search*/
+.search-wrapper{
+    margin: 2rem 8rem 2rem 8rem;
+    display: flex;
+
+}
+.search{
+    height: 2rem;
+   flex: 2;
+    outline: transparent;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-search{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

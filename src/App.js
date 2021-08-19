@@ -18,7 +18,7 @@ function App() {
                     <Switch>
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/browse' component={Browse}/>
-                        <Route exact path ='/search/:term' component={Search} />
+                        <Route exact path ='/search' component={Search} />
                     </Switch>
                 </div>
             </Router>
