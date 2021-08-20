@@ -31,12 +31,16 @@
 }
 
 /*Home*/
+.home{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
 .title-text {
     text-align: center;
 }
 
 .section-title {
-    margin-left: 6rem;
+    margin-left: 2rem;
 }
 
 .pages {
@@ -62,8 +66,8 @@
 }
 
 .movie-wrapper {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    /*margin-left: 4rem;*/
+    /*margin-right: 4rem;*/
     text-align: center;
 
 }

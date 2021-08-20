@@ -6,7 +6,7 @@ import PopularMovies from "../layout/PopularMovies";
 
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             <PopularMovies />
             {/* <TopMovies />*/}
             <Upcoming />

@@ -10,7 +10,7 @@ const MoviesItem = ({movie}) => {
                  onMouseLeave={()=>setClassName('no-display')}
             >
                 <p className={className}>
-                    <span className="inner-text">{movie.overview.length<=325 ? movie.overview:`${movie.overview.substring(0,300)} ......`}</span>
+                    <span className="inner-text">{movie.overview.length<=300 ? movie.overview:`${movie.overview.substring(0,300)} ......`}</span>
                 </p>
 
             </div>
