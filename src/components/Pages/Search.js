@@ -1,7 +1,14 @@
-import React,{useState} from 'react';
+import React,{useState, useContext} from 'react';
+import SearchContext from "../../context/search/searchContext";
 import Loading from "../layout/Loading";
 
+
 const Search = () => {
+    const searchState = useContext(SearchContext);
+    const {loading, searchResults, searchRequest} = searchState;
+    const onClick = () => {
+
+    }
     return (
         <div className='search-wrapper'>
             <div className="search-bar-wrapper">
@@ -10,7 +17,7 @@ const Search = () => {
             </div>
 
 
-            <Loading />
+            {loading && <Loading />}
         </div>
     );
 };
