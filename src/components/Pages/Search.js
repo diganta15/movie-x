@@ -1,11 +1,17 @@
 import React,{useState, useContext} from 'react';
 import SearchContext from "../../context/search/searchContext";
 import Loading from "../layout/Loading";
+import Movies from "../Movies/Movies";
+import Shows from "../shows/Shows";
+
 
 
 const Search = () => {
     const searchState = useContext(SearchContext);
-    const {loading, searchResults, searchRequest} = searchState;
+    const {loading, searchResultsMovies,searchResultsShows, searchRequest} = searchState;
+    const newMoviesResults = searchResultsMovies.results.slice(0,10);
+    const newShowsResults = searchResultsShows.results.slice(0,10);
+
     const onClick = () => {
 
     }
@@ -17,7 +23,15 @@ const Search = () => {
             </div>
 
 
-            {loading && <Loading />}
+            {loading? <Loading />:(
+               <div className="results">
+                   <h1 className="search-title">Movies</h1>
+                   <Movies movies={newMoviesResults} />
+                   <h1 className="search-title">TV Shows</h1>
+                    <Shows shows={newShowsResults} />
+               </div>
+
+            )}
         </div>
     );
 };

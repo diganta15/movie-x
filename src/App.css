@@ -132,6 +132,7 @@
 
 }
 
+
 .search {
     height: 2rem;
     flex: 2;
@@ -152,3 +153,6 @@
     padding-right: 20px;
 }
 
+.results{
+    margin: 2rem 8rem;
+}
