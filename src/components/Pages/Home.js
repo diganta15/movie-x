@@ -3,6 +3,7 @@ import TopMovies from "../layout/TopMovies";
 import Upcoming from "../layout/Upcoming";
 import PopularMovies from "../layout/PopularMovies";
 import MoviesContext from "../../context/movies/moviesContext";
+import Loading from "../layout/Loading";
 
 
 const Home = () => {
@@ -16,8 +17,12 @@ const Home = () => {
     },[])
     return (
         <div className="home">
-            {popularMovies && <PopularMovies />}
-            {upcoming && <Upcoming />}
+            {loading !==true && popularMovies !==null && upcoming!==null? (<div>
+                <div>
+                    <PopularMovies />
+                    <Upcoming />
+                </div>
+            </div>):(<Loading />) }
         </div>
     );
 };
