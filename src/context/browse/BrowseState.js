@@ -831,8 +831,13 @@ const BrowseState = (props) =>{
 
     const [state, dispatch] = useReducer(browseReducer, initialState);
 
+    //Get Movies
+    const getMovies = () =>{
+    console.log(process.env.REACT_APP_MOVIEDB_CLIENT_ID);
+    }
+
     return(
-        <BrowseContext.Provider value={{popularShows:state.popularShows,popularMovies:state.popularMovies}} >
+        <BrowseContext.Provider value={{popularShows:state.popularShows,popularMovies:state.popularMovies, getMovies}} >
             {props.children}
         </BrowseContext.Provider>
     )
