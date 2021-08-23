@@ -4,7 +4,7 @@ export default (state,action) =>{
     switch (action.type){
 
         case GET_UPCOMING:
-            console.log(action.payload);
+
             return {
                 ...state,
                 upcoming: action.payload,

@@ -90,8 +90,8 @@
 
     position: absolute;
     margin-top: 0px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 34px;
+    margin-right: 34px;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -110,19 +110,25 @@
 
 .shows {
     grid-gap: 20px;
+    justify-content: center;
+   margin-left: auto;
+    margin-right: auto;
 }
 
 .show-item-wrapper {
+    text-align: center;
 }
 
 
 .show-item {
     height: 8rem;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .browse {
-    margin: 2rem 8rem 2rem 8rem;
+    margin: 2rem 4rem 2rem 4rem;
 }
 
 /*Search*/
