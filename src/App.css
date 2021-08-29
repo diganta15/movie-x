@@ -1,11 +1,15 @@
 .grid {
     display: grid;
 }
-
+.grid-2{
+    grid-template-columns: 1fr 2fr;
+}
 .grid-3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+.jc{
+    justify-content: center;
+}
 .sp {
     justify-content: space-between;
 }
@@ -28,6 +32,13 @@
 
 .no-display {
     display: none;
+}
+.flex{
+    display: flex;
+    /*flex-direction: column;*/
+}
+.js{
+    justify-content: space-between;
 }
 
 /*Home*/
@@ -161,4 +172,41 @@
 
 .results{
     margin: 2rem 4rem;
+}
+
+/*Movies Details*/
+.movie-background-wrapper{
+    padding: 2rem 8rem;
+    background-position: center;
+    background-size: cover;
+}
+.poster>img{
+    height: 400px;
+}
+.rating{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 4%;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 30px;
+}
+.overview{
+    margin-top: 20px;
+}
+/*Shows*/
+.shows-background-wrapper{
+    padding: 2rem 8rem;
+    background-position: center;
+    background-size: cover;
+}
+.season-details{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.season-img{
+    object-fit: contain;
+    width: 100px;
 }

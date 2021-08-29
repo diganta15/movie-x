@@ -7,7 +7,8 @@ import BrowseState from "./context/browse/BrowseState";
 import SearchState from "./context/search/SearchState"
 import Browse from "./components/Pages/Browse";
 import Search from "./components/Pages/Search";
-
+import MoviesDetails from "./components/InnerPages/MoviesDetails";
+import ShowsDetails from "./components/InnerPages/ShowsDetails";
 
 function App() {
     return (
@@ -21,6 +22,8 @@ function App() {
                        <Route exact path='/' component={Home}/>
                        <Route exact path='/browse' component={Browse}/>
                        <Route exact path ='/search' component={Search} />
+                       <Route exact path ='/movies/:id' component={MoviesDetails} />
+                       <Route exact path ='/shows/:id' component ={ShowsDetails} />
                    </Switch>
                </div>
            </Router>
