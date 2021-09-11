@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react';
+import axios from 'axios';
 
 const MoviesDetails = (props) => {
 	const [data, setData] = useState({
@@ -83,9 +84,18 @@ const MoviesDetails = (props) => {
 	});
 
 
-	// useEffect(()=>{
-	// 	console.log(props.match.params.id);
-	// },[])
+	useEffect(()=>{
+		console.log(props.match.params.id);
+
+		async function fetchData(){
+			const id = props.match.params.id;
+			const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US`)
+			setData(res.data);
+		}
+
+		fetchData();
+		
+	},[]);
 
 	return (
 		<div className="movie-details">
