@@ -112,9 +112,9 @@ const MoviesDetails = (props) => {
 							{data.tagline}
 						</h3>
 
-							<div className="flex">
+							<div className="d">
 								<p className="release-date">
-									{data.release_date}
+									Release Date: {data.release_date}
 								</p>
 								<div className="rating">
 									<span>{data.vote_average}</span>

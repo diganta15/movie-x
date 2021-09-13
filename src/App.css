@@ -184,6 +184,7 @@
     height: 400px;
 }
 .rating{
+    margin-top: 10px;
     background-color: black;
     color: white;
     height: 30px;
