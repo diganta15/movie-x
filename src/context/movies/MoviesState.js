@@ -33,7 +33,7 @@ const MoviesState = (props) => {
 		try {
 			const res = await axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US&page=1`);
 			dispatch({type: GET_UPCOMING, payload: res.data});
-			console.log(res.data);
+
 
 		} catch (err) {
 			dispatch({type:SET_ERRORS, payload:err.response});
