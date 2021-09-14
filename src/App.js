@@ -9,6 +9,9 @@ import Browse from "./components/Pages/Browse";
 import Search from "./components/Pages/Search";
 import MoviesDetails from "./components/InnerPages/MoviesDetails";
 import ShowsDetails from "./components/InnerPages/ShowsDetails";
+import API from './components/Pages/API';
+import About from "./components/Pages/About";
+import Privacy from "./components/Pages/Privacy";
 
 function App() {
     return (
@@ -24,6 +27,9 @@ function App() {
                        <Route exact path ='/search' component={Search} />
                        <Route exact path ='/movies/:id' component={MoviesDetails} />
                        <Route exact path ='/shows/:id' component ={ShowsDetails} />
+                       <Route exact path = '/api' component={API} />
+                       <Route exact path = '/about' component={About} />
+                       <Route exact path = '/privacy' component={Privacy} />
                    </Switch>
                </div>
            </Router>

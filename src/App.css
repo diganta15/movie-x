@@ -211,3 +211,21 @@
     object-fit: contain;
     width: 100px;
 }
+
+/*API*/
+.api{
+    text-align: center;
+}
+.tmdb-logo{
+    margin-top: 10rem;
+    width: 300px;
+}
+
+/*About*/
+.about{
+    text-align: center;
+}
+/*Privacy*/
+.privacy{
+    text-align: center;
+}

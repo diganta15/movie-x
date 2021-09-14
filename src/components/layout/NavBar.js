@@ -12,9 +12,9 @@ const NavBar = () => {
              </ul>
              <h1 className="title-text">Movies X</h1>
              <ul className="pages sp pages-right">
-                 <li className="link list-none pointer">About</li>
-                 <li className="link list-none pointer">Privacy Policy</li>
-                 <li className="link list-none pointer">API</li>
+                 <li className="link list-none pointer"><Link to="/about">About</Link></li>
+                 <li className="link list-none pointer"><Link to="/privacy">Privacy Policy</Link></li>
+                 <li className="link list-none pointer"><Link to="/api">API</Link></li>
              </ul>
          </div>
         </div>
