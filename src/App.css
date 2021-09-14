@@ -64,8 +64,8 @@
 }
 
 .pages-right {
-    margin-right: 3rem;
-    margin-left: 14rem;
+    margin-right: 5rem;
+    margin-left: 9rem;
 }
 
 .link > * {
@@ -228,4 +228,32 @@
 /*Privacy*/
 .privacy{
     text-align: center;
+}
+
+/*Ipad*/
+@media only screen and (max-width: 820px) {
+    .pages-left{
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+    .pages-right{
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+   .movie-item{
+       height: 10rem;
+   }
+}
+@media only screen and (max-width: 840px) and (min-width: 821px) {
+    .pages-left{
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+    .pages-right{
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+    .movie-item{
+        height: 12rem;
+    }
 }
