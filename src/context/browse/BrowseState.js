@@ -4,6 +4,7 @@ import browseReducer from "./browseReducer";
 import axios from "axios";
 import {GET_POPULAR_MOVIES, GET_POPULAR_SHOWS, SET_ERRORS, SET_LOADING} from "../types";
 
+const REACT_APP_MOVIEDB_CLIENT_ID= '1110f193b789d3675a2ba137ac0b6b96';
 
 const BrowseState = (props) =>{
     const initialState = {
@@ -21,7 +22,7 @@ const BrowseState = (props) =>{
     const getPopularShows = async () => {
         setLoading();
         try{
-            const res = await axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US&page=1`);
+            const res = await axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=${REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US&page=1`);
             dispatch({type:GET_POPULAR_SHOWS, payload:res.data});
 
         }catch (err){
@@ -33,7 +34,7 @@ const BrowseState = (props) =>{
 
         setLoading();
         try {
-            const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US&page=1`);
+            const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US&page=1`);
             dispatch({type: GET_POPULAR_MOVIES, payload: res.data});
         } catch (err) {
             dispatch({type:SET_ERRORS, payload:err.response});

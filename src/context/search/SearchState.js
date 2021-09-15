@@ -4,6 +4,7 @@ import searchReducer from "./searchReducer";
 import {SET_LOADING, GET_SEARCH_RESULTS, GET_SEARCH_MOVIES, GET_SEARCH_SHOWS} from "../types";
 import axios from "axios";
 
+const REACT_APP_MOVIEDB_CLIENT_ID= '1110f193b789d3675a2ba137ac0b6b96';
 
 const SearchState = (props) =>{
 	const initialState = {
