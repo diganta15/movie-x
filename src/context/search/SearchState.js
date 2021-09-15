@@ -24,7 +24,7 @@ const SearchState = (props) =>{
 		setLoading();
 		try{
 
-			const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&query=${query}`);
+			const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${REACT_APP_MOVIEDB_CLIENT_ID}&query=${query}`);
 			dispatch({type:GET_SEARCH_MOVIES, payload:res.data});
 		}catch(err){
 			console.log("error")
@@ -33,7 +33,7 @@ const SearchState = (props) =>{
 	const getShows = async (query) =>{
 		setLoading();
 		try{
-			const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&page=1&include_adult=false&query=${query}`);
+			const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${REACT_APP_MOVIEDB_CLIENT_ID}&page=1&include_adult=false&query=${query}`);
 			dispatch({type:GET_SEARCH_SHOWS, payload:res.data});
 		}
 		catch(err){

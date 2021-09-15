@@ -5,7 +5,7 @@ import Loading from "../layout/Loading";
 const ShowsDetails = (props) => {
 	const [data, setData] = useState({});
 	const [loading, setLoading] = useState(true);
-
+	const REACT_APP_MOVIEDB_CLIENT_ID= '1110f193b789d3675a2ba137ac0b6b96';
 	useEffect(() => {
 		console.log(props.match.params.id);
 

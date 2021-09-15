@@ -5,13 +5,13 @@ import Loading from "../layout/Loading";
 const MoviesDetails = (props) => {
 	const [data, setData] = useState({});
 	const [loading, setLoading] = useState(true)
-
+	const REACT_APP_MOVIEDB_CLIENT_ID= '1110f193b789d3675a2ba137ac0b6b96';
 	useEffect(()=>{
 
 
 		async function fetchData(){
 			const id = props.match.params.id;
-			const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US`)
+			const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${REACT_APP_MOVIEDB_CLIENT_ID}&language=en-US`)
 			await  setData(res.data);
 			await setLoading(false)
 		}
