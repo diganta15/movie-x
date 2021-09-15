@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+.grid {
+    display: grid;
+}
+.grid-2{
+    grid-template-columns: 1fr 2fr;
+}
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.jc{
+    justify-content: center;
+}
+.sp {
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-none {
+    list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pointer {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-6 {
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.App-link {
-  color: #61dafb;
+.cursor {
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-display {
+    display: none;
+}
+.flex{
+    display: flex;
+    /*flex-direction: column;*/
+}
+.js{
+    justify-content: space-between;
+}
+
+/*Home*/
+.home{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.title-text {
+    text-align: center;
+}
+
+.section-title {
+    margin-left: 2rem;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages-left {
+    margin-left: 3rem;
+    margin-right: 14rem;
+}
+
+.pages-right {
+    margin-right: 5rem;
+    margin-left: 9rem;
+}
+
+.link > * {
+    text-decoration: none;
+}
+
+.movies {
+    grid-row-gap: 2rem;
+}
+
+.movie-wrapper {
+    /*margin-left: 4rem;*/
+    /*margin-right: 4rem;*/
+    text-align: center;
+
+}
+
+.movie-item-wrapper {
+    padding: 0px;
+
+}
+
+.movie-item {
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hover-text {
+
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 34px;
+    margin-right: 34px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.inner-text {
+    color: #fff;
+}
+
+.movie-name {
+
+}
+
+.shows {
+    grid-gap: 20px;
+    justify-content: center;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+.show-item-wrapper {
+    text-align: center;
+}
+
+
+.show-item {
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.browse {
+    margin: 2rem 4rem 2rem 4rem;
+}
+
+/*Search*/
+.search-bar-wrapper {
+    margin: 2rem 8rem 2rem 8rem;
+    display: flex;
+
+}
+
+
+.search {
+    height: 2rem;
+    flex: 2;
+    outline: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-search {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: transparent;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.results{
+    margin: 2rem 4rem;
+}
+
+/*Movies Details*/
+.movie-background-wrapper{
+    padding: 2rem 8rem;
+    background-position: center;
+    background-size: cover;
+}
+.poster>img{
+    height: 400px;
+}
+.rating{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 4%;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 30px;
+}
+.overview{
+    margin-top: 20px;
+}
+/*Shows*/
+.shows-background-wrapper{
+    padding: 2rem 8rem;
+    background-position: center;
+    background-size: cover;
+}
+.season-details{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.season-img{
+    object-fit: contain;
+    width: 100px;
+}
+
+/*API*/
+.api{
+    text-align: center;
+}
+.tmdb-logo{
+    margin-top: 10rem;
+    width: 300px;
+}
+
+/*About*/
+.about{
+    text-align: center;
+}
+/*Privacy*/
+.privacy{
+    text-align: center;
+}
+
+/*Ipad*/
+@media only screen and (max-width: 820px) {
+    .pages-left{
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+    .pages-right{
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+   .movie-item{
+       height: 10rem;
+   }
+}
+@media only screen and (max-width: 840px) and (min-width: 821px) {
+    .pages-left{
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+    .pages-right{
+        margin-right: 2rem;
+        margin-left: 0rem;
+    }
+    .movie-item{
+        height: 12rem;
+    }
 }
