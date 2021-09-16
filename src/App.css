@@ -243,7 +243,16 @@
    .movie-item{
        height: 10rem;
    }
+    .hover-text{
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 10px;
+    }
+    .inner-text{
+        font-size: 8px;
+    }
 }
+/*Ipad Pro*/
 @media only screen and (max-width: 840px) and (min-width: 821px) {
     .pages-left{
         margin-left: 2rem;
@@ -255,5 +264,57 @@
     }
     .movie-item{
         height: 12rem;
+    }
+    .hover-text{
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 14px;
+    }
+    .inner-text{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:420px){
+    .nav-bar>div{
+      grid-template-columns: 0.7fr 0.5fr 0.7fr !important;
+    }
+    .pages{
+        font-size: 12px;
+    }
+    .title-text{
+        font-size: 1rem;
+    }
+    .pages-left{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding: 4px;
+
+    }
+    .pages-right{
+        margin-right: 0rem;
+        margin-left: 0rem;
+        padding: 4px    ;
+    }
+    .movies{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .movie-item{
+        height: 14rem;
+    }
+    .shows{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .search-bar-wrapper{
+        margin: 10px;
+    }
+    .hover-text{
+        margin-left: 64px;
+        margin-right: 64px;
+        line-height: 14px;
+    }
+    .inner-text{
+        font-size: 10px;
     }
 }

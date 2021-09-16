@@ -21,7 +21,8 @@
     "build": "CI=false && react-scripts build",
     "dev-build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run dev-build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
