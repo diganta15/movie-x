@@ -54,7 +54,7 @@ const ShowsDetails = (props) => {
 
 					</div>
 					<div className="seasons">
-						{data.seasons.map(season => <div className="season">
+						{data.seasons.map(season => <div key={season.id} className="season">
 							<h2>{season.name}</h2>
 
 							<div className="flex js season-details">

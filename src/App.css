@@ -251,6 +251,25 @@
     .inner-text{
         font-size: 8px;
     }
+    .movie-background-wrapper{
+        padding: 1px 2px;
+        text-align: center;
+    }
+    .poster>img{
+        height: 350px;
+    }
+    .rating{
+        margin: auto;
+        width: 20%;
+    }
+    .shows-background-wrapper{
+        padding: 1px 2px;
+        text-align: center;
+    }
+    .season{
+        padding: 10px 30px;
+    }
+
 }
 /*Ipad Pro*/
 @media only screen and (max-width: 840px) and (min-width: 821px) {
@@ -273,10 +292,30 @@
     .inner-text{
         font-size: 10px;
     }
+    .movie-background-wrapper{
+        padding: 1px 2px;
+        text-align: center;
+    }
+    .rating{
+        margin: auto;
+        width: 20%;
+    }
+    .shows-background-wrapper{
+        padding: 10px 2px;
+        text-align: center;
+    }
+    .season{
+        padding: 20px 30px;
+    }
 }
+/*Mobile Devices*/
 @media only screen and (max-width:420px){
     .nav-bar>div{
       grid-template-columns: 0.7fr 0.5fr 0.7fr !important;
+    }
+    .section-title{
+        text-align: center;
+        margin-left: 0px;
     }
     .pages{
         font-size: 12px;
@@ -316,5 +355,27 @@
     }
     .inner-text{
         font-size: 10px;
+    }
+    .movie-background-wrapper{
+        padding: 1px 2px;
+        text-align: center;
+    }
+    .movie-background-wrapper>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .rating{
+        margin: auto;
+        width: 30%;
+    }
+    .shows-background-wrapper>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .season-details{
+        flex-direction: column;
+    }
+    .season-img{
+        margin: auto;
     }
 }
